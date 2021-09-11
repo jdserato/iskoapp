@@ -1,0 +1,7 @@
+#slogan{font-size: 53px;font-weight: 700;line-height: 64px;text-align:left;margin-bottom: 20px;}
+
+.landing-left, .landing-right{display: inline-block;vertical-align: top;max-width: 533px;}
+.landing-right{text-align: right;width: 487px;}
+.landing-container{padding-left: 161px;padding-top: 126px;text-align: left;clear: both;}
+.landing-container p{margin-bottom: 40px;}
+.landing-container a:last-of-type{margin-left: 20px;}
