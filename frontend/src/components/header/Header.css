@@ -6,7 +6,9 @@
 
 nav{float: right;}
 nav ul li{display: inline-block;}
+nav ul li.active a{font-weight:700;}
 nav ul li a{color: #2F1160;font-weight: 500;padding: 10px 12px;text-decoration: none;}
 nav ul li a:hover{text-decoration: underline;}
-nav ul li:last-child a{background: #7036CF; color: #fff; font-size: 18px;font-weight: 700;display: block;border-radius: 4px;padding: 11px 15px;}
-nav ul li:last-child a:hover{opacity: .5;text-decoration: none;}
+nav ul li.login-btn a{background: #7036CF; color: #fff; font-size: 18px;font-weight: 700;display: block;border-radius: 4px;padding: 11px 15px;}
+nav ul li.login-btn a:hover{opacity: .5;text-decoration: none;}
+nav ul li.user-circle{vertical-align: top;}

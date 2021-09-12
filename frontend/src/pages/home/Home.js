@@ -6,7 +6,7 @@ class home extends Component {
     render() {
         return (
             <div>
-                <Header />
+                <Header isLoggedIn={true} activeList={1}/>
             </div>
         )
     }

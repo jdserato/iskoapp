@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import Header from '../../components/header/Header'
-import Signup from '../signup/Signup'
 import './Login.css'
 import { Link } from 'react-router-dom'
 
