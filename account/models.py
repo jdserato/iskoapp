@@ -4,3 +4,4 @@ from django.contrib.auth.models import AbstractUser, Group
 # Create your models here.
 class Client(AbstractUser):
 	verification_code = models.IntegerField(default=0)
+	status = models.CharField(max_length=50)
