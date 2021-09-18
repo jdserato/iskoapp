@@ -9,7 +9,7 @@ class watch extends Component {
         super(props)
     
         this.state = {
-             purchasedCount: 0
+             purchasedCount: 1
         }
     }
     
@@ -17,7 +17,7 @@ class watch extends Component {
         // Sample content object for VideoBox component
         var content = {
             /* uncomment this for image URL */
-            //imageUrl: "",
+            // imageUrl: "",
             isPlaylist: false,
             price: "PHP 15.00",
             totalVideos: "10 videos",

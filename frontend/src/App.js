@@ -4,6 +4,7 @@ import Signup from './pages/signup/Signup'
 import Login from './pages/login/Login'
 import Home from './pages/home/Home'
 import Watch from './pages/watch/Watch'
+import Shop from './pages/shop/Shop'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route path="/login" exact component={Login} />
           <Route path="/home" exact component={Home} />
           <Route path="/watch" exact component={Watch} />
+          <Route path="/shop" exact component={Shop} />
         </Switch>
       </div>
     </Router>

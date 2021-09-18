@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import Header from '../../components/header/Header'
 import Stepper from '../../components/stepper/Stepper'
+import CategoryBox from '../../components/categoryBox/CategoryBox'
 import './Signup.css'
 import UserTypeImg from '../../images/user-type.png'
-import ImagePlaceholder from '../../images/image-placeholder.png'
 
 class Signup extends Component {
     constructor(props) {
@@ -123,28 +123,22 @@ class Signup extends Component {
                     </div>
                     <div className="categories">
                         <section>
-                            <figure><img src={ImagePlaceholder} alt="landscape drawing"/></figure>
-                            <p>Nostrud culpa</p>
+                            <CategoryBox isActive={false}/>
                         </section>
                         <section className="active">
-                            <figure><img src={ImagePlaceholder} alt="landscape drawing"/></figure>
-                            <p>Nostrud culpa</p>
+                            <CategoryBox isActive={false}/>
                         </section>
                         <section>
-                            <figure><img src={ImagePlaceholder} alt="landscape drawing"/></figure>
-                            <p>Nostrud culpa</p>
+                            <CategoryBox isActive={true}/>
                         </section>
                         <section className="active">
-                            <figure><img src={ImagePlaceholder} alt="landscape drawing"/></figure>
-                            <p>Nostrud culpa</p>
+                            <CategoryBox isActive={true}/>
                         </section>
                         <section className="active">
-                            <figure><img src={ImagePlaceholder} alt="landscape drawing"/></figure>
-                            <p>Nostrud culpa</p>
+                            <CategoryBox isActive={true}/>
                         </section>
                         <section>
-                            <figure><img src={ImagePlaceholder} alt="landscape drawing"/></figure>
-                            <p>Nostrud culpa</p>
+                            <CategoryBox isActive={false}/>
                         </section>
                     </div>
                 </form>
