@@ -1,3 +1,5 @@
 django
 mysqlclient
 djangorestframework
+gunicorn
+django-heroku
