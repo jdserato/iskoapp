@@ -4,9 +4,7 @@
 #signup-container .step2 .labeled-input{width: 404px;}
 #signup-container .step4 .form{width: 1055px;margin-left: 50%;transform: translateX(-50%);}
 #signup-container .step4 .categories{display: flex;flex-wrap: wrap;justify-content: space-between;}
-#signup-container .step4 .categories section{padding: 20px;width: 295px;min-height: 373px;border: 1px solid rgba(47, 17, 96, 0.3);box-sizing: border-box;border-radius: 5px;margin-top: 38px;}
-#signup-container .step4 .categories section.active{background: #2F1160;color: #fff;}
-#signup-container .step4 .categories section figure{margin:0}
+
 .user-type p{color: #2F1160;font-size: 20px;font-weight: 700;}
 .footer-btn{margin-top: 131px;}
 .footer-btn a{width: 131px;height: 62px;line-height: 62px;padding: 0;text-align: center;display: inline-block;box-sizing: border-box;vertical-align: top;}
