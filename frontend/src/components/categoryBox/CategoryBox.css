@@ -1,4 +1,5 @@
 .category-box{padding: 20px;width: 295px;min-height: 373px;border: 1px solid rgba(47, 17, 96, 0.3);box-sizing: border-box;border-radius: 5px;margin-top: 38px;margin-right: 38px;}
 .category-box.active{background: #2F1160;color: #fff;}
+.category-box.active p{color: #fff;}
 .category-box figure{margin:0}
 .category-box p{font-weight: 700;font-size: 25px;color: #2F1160;}
