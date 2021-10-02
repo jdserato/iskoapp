@@ -1,5 +1,8 @@
 django
 mysqlclient
 djangorestframework
+djoser
 gunicorn
 django-heroku
+boto3
+knox
