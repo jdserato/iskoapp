@@ -14,7 +14,7 @@ class Header extends Component {
                 <li className={this.props.activeList === 3 ? "active" : ""}><Link to="/shop">Shop</Link></li>
                 <li className={this.props.activeList === 4 ? "active" : ""}><Link to="/my-playlist">My Playlist</Link></li>
                 <li className={this.props.activeList === 5 ? "active" : ""}><Link to="/my-account">My Account</Link></li>
-                <li className="user-circle"><Link to="/my-account"><img src={UserCircle} alt="user circle" /></Link></li>
+                <li className="user-circle"><Link to="/update-account"><img src={UserCircle} alt="user circle" /></Link></li>
             </ul>
         }
         else{

@@ -61,6 +61,9 @@ import React, { Component } from "react";
 import ReactDOM from 'react-dom';
 import Watch from './../pages/watch/Watch'
 import Shop from './../pages/shop/Shop'
+import MyPlaylist from './../pages/myPlaylist/MyPlaylist'
+import UpdateAccount from './../pages/updateAccount/UpdateAccount'
+import Course from './../pages/course/Course'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import { render } from "react-dom";
 
@@ -94,6 +97,9 @@ class App extends Component {
                 <Route path="/home" exact component={Home} />
                 <Route path="/watch" exact component={Watch} />
                 <Route path="/shop" exact component={Shop} />
+                <Route path="/my-playlist" exact component={MyPlaylist} />
+                <Route path="/update-account" exact component={UpdateAccount} />
+                <Route path="/course" exact component={Course} />
               </Switch>
             </div>
           </Router>

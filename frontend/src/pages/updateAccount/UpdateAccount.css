@@ -1,0 +1,35 @@
+#update-account-body { text-align: left; } 
+#update-account-body h1.header-title { padding: 106px 0 0; line-height: 100%; margin: 0 0 50; text-align: left;font-size: 53px; } 
+#update-account-body ul { list-style: none; padding: 0;margin: 0; } 
+#update-account-body ul li a { font-size: 20px; color: #2F1160;text-decoration: none; } 
+#update-account-body ul li a active { font-weight: 700; } 
+#update-account-body ul li { margin-bottom: 17px; } 
+#update-account-body ul li:nth-child(4) { margin-bottom: 50px; } 
+.left-nav { display: inline-block; width: 217px;vertical-align: top;  }  
+
+.update-account-content { float: right; width: calc(100% - 321px); height: 100%; border-left: 1px solid #000; padding-left: 98px; } 
+ .update-account-content form { width: 100%; } 
+ .form-row { display: flex; margin-bottom: 19px;position: relative;justify-content: space-between; } 
+ .update-account-content form label { width: 20%;font-weight: 700; } 
+
+ .photo-field { display: flex; margin-bottom: 38px; } 
+ .photo-field figure { margin: 0; width: 20%; } 
+ .photo-field a { height: 30px; line-height: 30px; font-weight: 700; } 
+ .photo-field a:hover { background: #2F1160; opacity: 1; } 
+ .btn-secondary { color: #2F1160; border: 3px solid #2F1160; } 
+
+ #update-account-form .form-row:nth-child(3) .form-input {width: 69%;}
+#change-password {color: #828282;line-height: 52px;height: 52px;width: 29%;padding-left: 16px;}
+.labeled-input select{width: 71%;}
+
+.address-inputs { display: flex; width: 106%; flex-wrap: wrap; justify-content: space-between; } 
+ .address-inputs .labeled-input:nth-child(1) { width: 100%; } 
+ .address-inputs .labeled-input { width: 48%; } 
+ .address-inputs .labeled-input select { width: 100%; } 
+
+ #update-account-form .form-row:last-child { justify-content: end; } 
+ #update-account-form .form-row:last-child a { margin-left: 15px; } 
+ 
+ #update-account-form .labeled-input label { width: auto; } 
+ .address-inputs .labeled-input select { background: #fff; } 
+ .labeled-input input, .labeled-input select, .form-input { background: #fff; } 

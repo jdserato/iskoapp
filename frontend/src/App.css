@@ -72,7 +72,7 @@ h2{margin: 0;}
   font-size: 14px;
   font-weight: 700;
 }
-.labeled-input input, .labeled-input select{position: static;
+.labeled-input input, .labeled-input select, .form-input{position: static;
     width: 100%;
     height: 50px;
     border: 1px solid #2F1160;

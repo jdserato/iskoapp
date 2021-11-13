@@ -5,6 +5,7 @@ import Tags from '../../components/tags/Tags'
 import SearchBar from '../../components/searchBar/SearchBar'
 import CategoryBox from '../../components/categoryBox/CategoryBox'
 import VideoBox from '../../components/videoBox/VideoBox'
+import ShopInfo from '../../components/shopInfo/ShopInfo'
 
 class Shop extends Component {
     render() {
@@ -25,6 +26,7 @@ class Shop extends Component {
                 <div className="wrapper">
                     <div id="shop-body">
                         <h1>Time to Shop!</h1>
+                        <ShopInfo />
                         <div id="shop-search-tags">
                             <Tags tagName="Search Code" isActive={true}/>
                             <Tags tagName="Search Author" isActive={false} />
