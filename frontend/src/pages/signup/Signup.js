@@ -4,8 +4,12 @@ import Stepper from '../../components/stepper/Stepper'
 import CategoryBox from '../../components/categoryBox/CategoryBox'
 import './Signup.css'
 import UserTypeImg from '../../images/user-type.png'
+import { Link, Redirect } from 'react-router-dom'
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+import { register } from '../../actions/auth';
 
-class Signup extends Component {
+export class Signup extends Component {
     constructor(props) {
         super(props)
     
@@ -35,10 +39,26 @@ class Signup extends Component {
 
     onNextClick(){
         if(this.state.stepNumber < this.state.maxStepper){
+            if (this.state.stepNumber === 1) {
+                const password = this.state.password;
+                const password2 = this.state.password2;
+                if (password != password2) {
+                    alert("Passwords do not match");
+                    return;
+                } else if (password.length < 8) {
+                    alert("Password must have more than 7 characters");
+                    return;
+                }
+            } 
+            if (this.state.stepNumber === 3) {
+                alert(this.state.email);
+                // this.props.login(this.state.email, this.state.password)
+                this.props.register(this.state.email, this.state.password, this.state.selectedUserType, this.state.fname, this.state.lname, this.state.bdate, this.state.contactNo, this.state.address, this.state.educationLevel);
+            }
             this.setState({
                 stepNumber: this.state.stepNumber+1
             })
-        }
+        } 
     }
 
     onPrevClick(){
@@ -144,6 +164,7 @@ class Signup extends Component {
                 </form>
             </div>
         }
+        const { email, password } = this.state;
         return (
             <div>
                 <Header />
@@ -161,4 +182,7 @@ class Signup extends Component {
     }
 }
 
-export default Signup
+const mapStateToProps = (state) => ({
+  isAuthenticated: state.auth.isAuthenticated,
+});
+export default connect(mapStateToProps, { register })(Signup);

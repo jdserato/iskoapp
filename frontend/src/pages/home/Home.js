@@ -1,10 +1,17 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import Header from '../../components/header/Header'
 import './Home.css'
 import VideoBox from '../../components/videoBox/VideoBox'
 
 class home extends Component {
+  static propTypes = {
+    auth: PropTypes.object.isRequired,
+  };
     render() {
+        const { isAuthenticated, user } = this.props.auth;
         // Sample content object for VideoBox component
         var content = {
             /* uncomment this for image URL */
@@ -31,7 +38,7 @@ class home extends Component {
                 <Header isLoggedIn={true} activeList={1}/>
                 <div className="wrapper">
                     <div id="home-body">
-                        <h1>Welcome back, Charlene!</h1>
+                        <h1>{user ? `Welcome back, ${user.first_name}!` : ''}</h1>
 
                         <div className="video-list">
                             <h2>Recommended For You <a href="#!">See All</a></h2>
@@ -82,4 +89,9 @@ class home extends Component {
     }
 }
 
-export default home
+// export default home
+const mapStateToProps = (state) => ({
+  auth: state.auth,
+});
+
+export default connect(mapStateToProps)(home);

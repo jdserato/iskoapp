@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
 import Header from '../../components/header/Header'
 import './Login.css'
-import { Link } from 'react-router-dom'
+import { Link, Redirect } from 'react-router-dom'
 import { connect } from 'react-redux';
-import $ from 'jquery';
 import PropTypes from 'prop-types';
 import { login } from '../../actions/auth';
 
@@ -20,28 +19,6 @@ export class Login extends Component {
     onLogin = (event) => {
         event.preventDefault();
         this.props.login(this.state.email, this.state.password);
-        // alert(`${this.state.email} ${this.state.password}` + "Calling ajax ver 2");
-        // try {
-        //     $.ajax({
-        //         url: '/api/auth/login/',
-        //         contentType: 'application/json',
-        //         method: "POST",
-        //         data: {
-        //             'email': this.state.email,
-        //             'password': this.state.password,
-        //         },
-        //         success: function(data) {
-        //             alert("Hooray");
-        //         },
-        //         error: function(data) {
-        //             alert(data.message);
-        //         }
-        //     });
-        // } catch (err) {
-        //     alert("error found" + err);
-        // }
-        
-        // alert("ajax ver 2 called?");
     }
 
     handleChange(event){
@@ -52,6 +29,9 @@ export class Login extends Component {
     }
     
     render() {
+        if (this.props.isAuthenticated) {
+          return <Redirect to="/home" />;
+        }
         const { username, password } = this.state;
         return (
             <div>

@@ -5,4 +5,4 @@ djoser
 gunicorn
 django-heroku
 boto3
-knox
+django-rest-knox
